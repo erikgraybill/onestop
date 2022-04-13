@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/Blue">
+        android:background="@color/blue">
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="10dp"
             android:layout_marginTop="60dp"
-            android:background="@color/Orange"
+            android:background="@color/orange"
             app:layout_constraintBottom_toTopOf="@+id/mapView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
             android:layout_width="419dp"
             android:layout_height="11dp"
             android:layout_marginBottom="60dp"
-            android:background="@color/Orange"
+            android:background="@color/orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:clickable="true"
-            app:backgroundTint="@color/Yellow"
+            app:backgroundTint="@color/yellow"
             app:layout_constraintBottom_toBottomOf="@+id/DecorativeDivider2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
