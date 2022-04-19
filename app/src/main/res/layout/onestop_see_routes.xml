@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Blue">
+
+        <View
+            android:id="@+id/DecorativeDivider1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/Orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/DecorativeDivider2"
+            android:layout_width="419dp"
+            android:layout_height="11dp"
+            android:layout_marginBottom="60dp"
+            android:background="@color/Orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/NonMapBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
+
+        <TextView
+            android:id="@+id/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OneStop"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Routes"
+            android:textColor="@color/Orange"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/BLButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/NonMapBackground" />
+
+        <Button
+            android:id="@+id/BLButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="432dp"
+            android:background="@color/white"
+            android:text="Blue Loop"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/NonMapBackground" />
+
+        <Button
+            android:id="@+id/WLButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="364dp"
+            android:background="@color/white"
+            android:text="White Loop"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BLButton" />
+
+        <Button
+            android:id="@+id/RLButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="292dp"
+            android:background="@color/white"
+            android:text="Red Link"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WLButton" />
+
+        <Button
+            android:id="@+id/VEButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="224dp"
+            android:background="@color/white"
+            android:text="Vairo Express"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RLButton"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <Button
+            android:id="@+id/WDButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="144dp"
+            android:background="@color/white"
+            android:text="Waupelani Drive"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VEButton" />
+
+        <Button
+            android:id="@+id/BButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="64dp"
+            android:background="@color/white"
+            android:text="Boalsburg"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WDButton" />
+
+        <Button
+            android:id="@+id/SingleRideButton"
+            android:layout_width="302dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:text="Toftrees"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BButton"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
