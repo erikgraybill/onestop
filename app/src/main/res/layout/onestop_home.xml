@@ -73,7 +73,7 @@
             app:tint="@color/white"/>
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OneStop"

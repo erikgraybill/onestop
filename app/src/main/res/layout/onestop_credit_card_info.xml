@@ -37,10 +37,11 @@
             android:background="@color/grey"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1"
-            tools:layout_editor_absoluteX="1dp" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OneStop"
@@ -50,6 +51,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BACKbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:id="@+id/SUMBITBUTTON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMBIT"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <RadioButton
+            android:id="@+id/Credit"
+            android:layout_width="93dp"
+            android:layout_height="51dp"
+            android:text="Credit"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <RadioButton
+            android:id="@+id/Debit"
+            android:layout_width="86dp"
+            android:layout_height="53dp"
+            android:text="Debit"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="165dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
