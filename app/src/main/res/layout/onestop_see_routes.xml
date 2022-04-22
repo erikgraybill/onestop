@@ -41,7 +41,7 @@
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
 
         <TextView
-            android:id="@+id/OneStop"
+            android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OneStop"
@@ -156,7 +156,7 @@
             app:layout_constraintTop_toBottomOf="@+id/WDButton" />
 
         <Button
-            android:id="@+id/TButton"
+            android:id="@+id/SingleRideButton"
             android:layout_width="302dp"
             android:layout_height="54dp"
             android:layout_marginTop="5dp"
