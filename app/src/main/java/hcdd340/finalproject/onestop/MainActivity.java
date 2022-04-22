@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.onestop_home);
 
-        Button button = findViewById(R.id.PassWallet);
-        button.setOnClickListener(this);
+        TextView wallet = findViewById(R.id.PassWallet);
+        wallet.setOnClickListener(this);
     }
 
     @Override
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void handlePassWalletClick() {
-        //Intent intent = new Intent(this, LogInActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, BuyPass.class);
+        startActivity(intent);
     }
 }
