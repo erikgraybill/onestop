@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView wallet = findViewById(R.id.PassWallet);
         wallet.setOnClickListener(this);
+
+        Button routes = findViewById(R.id.SeeRoutesButton);
+        routes.setOnClickListener(this);
     }
 
     @Override
@@ -29,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (eventSourceId == R.id.PassWallet) {
             handlePassWalletClick();
-        }/* else if (eventSourceId == R.id.button_details) {
-            handleDetailsButtonClick();
-        } else if (eventSourceId == R.id.psu_logo) {
+        } else if (eventSourceId == R.id.SeeRoutesButton) {
+            handleRoutesClick();
+        }/* else if (eventSourceId == R.id.psu_logo) {
             handleLogoClick();
         } else if (eventSourceId == R.id.id_label) {
             handleIDLabelClick();
@@ -39,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else {
             Log.d(TAG, String.format("Unknown click event source: %s", eventSourceId));
         }
+    }
+
+    private void handleRoutesClick() {
+        Intent intent = new Intent(this, BusRoutes.class);
+        startActivity(intent);
     }
 
     private void handlePassWalletClick() {
