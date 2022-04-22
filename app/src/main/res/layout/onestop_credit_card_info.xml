@@ -64,16 +64,16 @@
             android:layout_width="90dp"
             android:layout_height="55dp"
             android:text="Credit"
-            tools:layout_editor_absoluteX="72dp"
-            tools:layout_editor_absoluteY="398dp" />
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="246dp" />
 
         <RadioButton
             android:id="@+id/Debit"
             android:layout_width="86dp"
             android:layout_height="53dp"
             android:text="Debit"
-            tools:layout_editor_absoluteX="233dp"
-            tools:layout_editor_absoluteY="398dp" />
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="246dp" />
 
         <EditText
             android:id="@+id/Name"
@@ -82,8 +82,44 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Card Name"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="469dp" />
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="343dp" />
+
+        <TextView
+            android:id="@+id/PassType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Ride"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="166dp" />
+
+        <TextView
+            android:id="@+id/TOTAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$39.00"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="166dp" />
+
+        <EditText
+            android:id="@+id/CREDITNUMBER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="9-NUMBER"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="401dp" />
+
+        <EditText
+            android:id="@+id/cvc"
+            android:layout_width="85dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="CVC"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="393dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
