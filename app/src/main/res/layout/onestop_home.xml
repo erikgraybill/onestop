@@ -10,23 +10,12 @@
         android:layout_height="match_parent"
         android:background="@color/blue">
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
-            android:layout_width="412dp"
-            android:layout_height="585dp"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
-
         <View
             android:id="@+id/DecorativeDivider1"
             android:layout_width="wrap_content"
             android:layout_height="10dp"
             android:layout_marginTop="60dp"
             android:background="@color/orange"
-            app:layout_constraintBottom_toTopOf="@+id/mapView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,8 +28,7 @@
             android:background="@color/orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mapView" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/SeeRoutesButton"
@@ -48,13 +36,11 @@
             android:layout_height="53dp"
             android:layout_marginBottom="20dp"
             android:background="@color/white"
-            android:text="See Routes"
+            android:text="@string/see_routes"
             android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/mapView"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/PassWallet"
@@ -70,20 +56,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/Wallet"
-            app:tint="@color/white"/>
+            app:srcCompat="@drawable/money"
+            app:tint="@color/white"
+            android:focusable="true"
+            android:contentDescription="@string/wallet" />
 
         <TextView
             android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OneStop"
+            android:text="@string/app"
             android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
