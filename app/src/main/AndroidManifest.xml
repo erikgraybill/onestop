@@ -26,6 +26,12 @@
         <activity
             android:name=".BusRoutes"
             android:exported="false" />
+        <activity
+            android:name=".CreditCardInfo"
+            android:exported="false" />
+        <activity
+            android:name=".BusStats"
+            android:exported="false" />
     </application>
 
 </manifest>
