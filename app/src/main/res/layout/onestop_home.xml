@@ -30,6 +30,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/BlueLoop"
+            android:layout_width="1003dp"
+            android:layout_height="592dp"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/blueloop"
+            android:contentDescription="@string/todo" />
+
         <Button
             android:id="@+id/SeeRoutesButton"
             android:layout_width="232dp"
@@ -44,17 +60,16 @@
 
         <TextView
             android:id="@+id/PassWallet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="83dp"
             android:layout_marginEnd="16dp"
-            android:text="$"
             android:background="@drawable/solid_background"
             app:layout_constraintBottom_toBottomOf="@+id/DecorativeDivider2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.04"/>
 
         <TextView
             android:id="@+id/TitleTextView"
@@ -66,7 +81,24 @@
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="48dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/buy"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="@+id/PassWallet"
+            app:layout_constraintEnd_toEndOf="@+id/PassWallet"
+            app:layout_constraintStart_toEndOf="@+id/PassWallet"
+            app:layout_constraintStart_toStartOf="@+id/BlueLoop"
+            app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
