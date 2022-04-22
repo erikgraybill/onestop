@@ -51,5 +51,48 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <Button
+            android:id="@+id/BACKbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:id="@+id/SUMBITBUTTON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMBIT"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <RadioButton
+            android:id="@+id/Credit"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:text="Credit"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+        <RadioButton
+            android:id="@+id/Debit"
+            android:layout_width="86dp"
+            android:layout_height="53dp"
+            android:text="Debit"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Card Name"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="469dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
