@@ -157,7 +157,7 @@
             app:layout_constraintTop_toBottomOf="@+id/WDButton" />
 
         <Button
-            android:id="@+id/SingleRideButton"
+            android:id="@+id/HMButton"
             android:layout_width="302dp"
             android:layout_height="54dp"
             android:layout_marginTop="5dp"
