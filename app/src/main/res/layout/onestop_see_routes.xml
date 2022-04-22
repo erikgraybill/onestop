@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OneStop"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -172,4 +172,36 @@
             app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/greenlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green Link"
+                app:rippleColor="#673AB7" />
+
+            <Button
+                android:id="@+id/ValleyVista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rippleColor="#673AB7"
+                tools:text="Valley Vista" />
+
+            <Button
+                android:id="@+id/Bellefonte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bellefonte"
+                app:rippleColor="#673AB7" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
