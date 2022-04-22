@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BuyPass extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "ONESTOP_BUYPASS";
-    Intent intent = new Intent(this, CreditCardInfo.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,24 +50,28 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void handleMonthClick() {
+        Intent intent = new Intent(this, CreditCardInfo.class);
         intent.putExtra("passType","month");
         intent.putExtra("charge","$13.20");
         startActivity(intent);
     }
 
     private void handleWeekClick() {
+        Intent intent = new Intent(this, CreditCardInfo.class);
         intent.putExtra("passType","week");
         intent.putExtra("charge","$8.80");
         startActivity(intent);
     }
 
     private void handleDayClick() {
+        Intent intent = new Intent(this, CreditCardInfo.class);
         intent.putExtra("passType","day");
         intent.putExtra("charge","$4.40");
         startActivity(intent);
     }
 
     private void handleSingleClick() {
+        Intent intent = new Intent(this, CreditCardInfo.class);
         intent.putExtra("passType","single");
         intent.putExtra("charge","$2.20");
         startActivity(intent);
