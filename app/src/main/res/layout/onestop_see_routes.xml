@@ -45,8 +45,11 @@
             android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OneStop"
-            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/onestop"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,152 +60,107 @@
             android:id="@+id/pageTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Routes"
-            android:textColor="@color/orange"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/BLButton"
+            app:layout_constraintBottom_toBottomOf="@+id/DecorativeDivider1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/NonMapBackground" />
+            app:layout_constraintTop_toTopOf="@+id/NonMapBackground"
+            app:layout_constraintVertical_bias="0.288" />
 
-        <Button
-            android:id="@+id/BLButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="432dp"
-            android:background="@color/white"
-            android:text="Blue Loop"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/NonMapBackground" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/WLButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="364dp"
-            android:background="@color/white"
-            android:text="White Loop"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BLButton" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <Button
-            android:id="@+id/RLButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="292dp"
-            android:background="@color/white"
-            android:text="Red Link"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/WLButton" />
+                <Button
+                    android:id="@+id/BLButton"
+                    android:layout_width="300dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/blue_loop"
+                    android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/VEButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="224dp"
-            android:background="@color/white"
-            android:text="Vairo Express"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/RLButton"
-            app:layout_constraintVertical_bias="0.625" />
+                <Button
+                    android:id="@+id/WLButton"
+                    android:layout_width="302dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/white_loop"
+                    android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/WDButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="144dp"
-            android:background="@color/white"
-            android:text="Waupelani Drive"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/VEButton" />
+                <Button
+                    android:id="@+id/RLButton"
+                    android:layout_width="302dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/red_link"
+                    android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/BButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="64dp"
-            android:background="@color/white"
-            android:text="Boalsburg"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/WDButton" />
+                <Button
+                    android:id="@+id/VEButton"
+                    android:layout_width="302dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/vairo_express"
+                    android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/HMButton"
-            android:layout_width="302dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
-            android:background="@color/white"
-            android:text="Toftrees"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BButton"
-            app:layout_constraintVertical_bias="1.0" />
+                <Button
+                    android:id="@+id/WDButton"
+                    android:layout_width="302dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/waupelani_drive"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/BButton"
+                    android:layout_width="302dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@color/white"
+                    android:text="@string/boalsburg"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/HMButton"
+                    android:layout_width="302dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/toftrees"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/BACK"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/white"
+                    android:text="@string/toftrees"
+                    android:textColor="@color/black"
+                    tools:text="Back" />
+            </LinearLayout>
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/greenlink"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Green Link"
-                app:rippleColor="#673AB7" />
-
-            <Button
-                android:id="@+id/ValleyVista"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:rippleColor="#673AB7"
-                tools:text="Valley Vista" />
-
-            <Button
-                android:id="@+id/Bellefonte"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bellefonte"
-                app:rippleColor="#673AB7" />
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>

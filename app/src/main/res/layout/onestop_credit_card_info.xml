@@ -87,18 +87,18 @@
 
         <TextView
             android:id="@+id/PassType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="81dp"
+            android:layout_height="28dp"
             android:text="Single Ride"
-            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteX="104dp"
             tools:layout_editor_absoluteY="166dp" />
 
         <TextView
             android:id="@+id/TOTAL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="69dp"
+            android:layout_height="26dp"
             android:text="$39.00"
-            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteX="219dp"
             tools:layout_editor_absoluteY="166dp" />
 
         <EditText
