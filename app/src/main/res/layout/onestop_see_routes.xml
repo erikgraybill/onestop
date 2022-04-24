@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -70,17 +70,23 @@
             app:layout_constraintVertical_bias="0.288" />
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="395dp"
+            android:layout_height="729dp"
+            app:layout_constraintEnd_toEndOf="@id/DecorativeDivider2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/DecorativeDivider1"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/BLButton"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="63dp"
                     android:layout_marginTop="80dp"
                     android:layout_marginBottom="40dp"
@@ -90,8 +96,8 @@
 
                 <Button
                     android:id="@+id/WLButton"
-                    android:layout_width="302dp"
-                    android:layout_height="63dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:background="@color/white"
@@ -100,7 +106,7 @@
 
                 <Button
                     android:id="@+id/RLButton"
-                    android:layout_width="302dp"
+                    android:layout_width="363dp"
                     android:layout_height="54dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
@@ -110,8 +116,8 @@
 
                 <Button
                     android:id="@+id/VEButton"
-                    android:layout_width="302dp"
-                    android:layout_height="54dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:background="@color/white"
@@ -120,8 +126,8 @@
 
                 <Button
                     android:id="@+id/WDButton"
-                    android:layout_width="302dp"
-                    android:layout_height="54dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:background="@color/white"
@@ -130,8 +136,8 @@
 
                 <Button
                     android:id="@+id/BButton"
-                    android:layout_width="302dp"
-                    android:layout_height="54dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="22dp"
                     android:background="@color/white"
@@ -140,7 +146,7 @@
 
                 <Button
                     android:id="@+id/HMButton"
-                    android:layout_width="302dp"
+                    android:layout_width="match_parent"
                     android:layout_height="54dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
@@ -157,7 +163,7 @@
                     android:background="@color/white"
                     android:text="@string/toftrees"
                     android:textColor="@color/black"
-                    tools:text="Back" />
+                    tools:text="BACK" />
             </LinearLayout>
         </ScrollView>
 

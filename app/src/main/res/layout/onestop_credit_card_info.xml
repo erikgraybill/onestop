@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="961dp"
         android:background="@color/blue">
 
         <View
@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/onestop6"
@@ -104,14 +104,14 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="1dp"
+            android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/card_name"
             app:layout_constraintBottom_toTopOf="@+id/CREDITNUMBER"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Debit"
-            android:autofillHints="" />
+            app:layout_constraintTop_toBottomOf="@+id/Debit" />
 
         <TextView
             android:id="@+id/PassType"
@@ -145,7 +145,7 @@
             app:layout_constraintStart_toEndOf="@+id/Prices"
             app:layout_constraintTop_toBottomOf="@+id/PassType"
             app:layout_constraintVertical_bias="1.0"
-            tools:ignore="LabelFor"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/CREDITNUMBER"
@@ -154,6 +154,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="88dp"
+            android:autofillHints="9-Numbers"
             android:ems="10"
             android:inputType="numberSigned"
             android:minHeight="48dp"
@@ -161,7 +162,6 @@
             app:layout_constraintBottom_toTopOf="@+id/BACKbutton"
             app:layout_constraintEnd_toStartOf="@+id/cvc"
             app:layout_constraintStart_toStartOf="parent"
-            android:autofillHints="9-Numbers"
             tools:ignore="LabelFor" />
 
         <EditText
@@ -170,13 +170,13 @@
             android:layout_height="48dp"
             android:layout_marginEnd="60dp"
             android:layout_marginBottom="8dp"
+            android:autofillHints="CVC"
             android:ems="10"
             android:inputType="numberSigned"
             android:text="@string/cvc"
             app:layout_constraintBottom_toTopOf="@+id/SUMBITBUTTON"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/CardName"
-            android:autofillHints="CVC"
             tools:ignore="LabelFor" />
 
         <TextView

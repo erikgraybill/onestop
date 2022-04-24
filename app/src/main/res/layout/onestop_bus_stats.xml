@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/onestop3"
@@ -47,7 +47,7 @@
             android:layout_width="173dp"
             android:layout_height="39dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="14dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="5dp"
             android:text="@string/distance_away"
@@ -95,11 +95,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="16dp"
             android:text="@string/capacity"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintBottom_toTopOf="@+id/Back4"
             app:layout_constraintEnd_toStartOf="@+id/CapacityData"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LastStop" />
@@ -154,19 +154,19 @@
 
         <ImageView
             android:id="@+id/SampleMap"
-            android:layout_width="214dp"
-            android:layout_height="227dp"
+            android:layout_width="211dp"
+            android:layout_height="209dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="14dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toTopOf="@+id/DistanceAway"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ROUTENAME"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/todo" />
+            tools:srcCompat="@tools:sample/avatars" />
 
         <Button
             android:id="@+id/Back4"
@@ -180,6 +180,7 @@
             android:text="@string/back3"
             app:layout_constraintBottom_toBottomOf="@+id/DecorativeDivider2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/CapacityData" />
 

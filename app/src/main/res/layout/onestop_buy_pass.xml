@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/TitleTextView"
+            android:id="@+id/OneStop7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/onestop"
@@ -42,23 +42,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/pageTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/buy_passes"
             android:textColor="#F3F2EF"
-            android:textSize="24sp"
+            android:textSize="48sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
-
 
         <Button
             android:id="@+id/SingleButton"
             android:layout_width="302dp"
             android:layout_height="54dp"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="50dp"
             android:background="@color/white"
             android:text="@string/single_ride"
             android:textColor="@color/black"
@@ -114,7 +116,7 @@
             android:id="@+id/backed"
             android:layout_width="302dp"
             android:layout_height="54dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="32dp"
             android:background="@color/purple_200"
             android:text="@string/back3"
             android:textColor="@color/white"
