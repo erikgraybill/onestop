@@ -20,9 +20,13 @@
     <string name="buy_passes">Buy Passes</string>
     <string name="onestop">OneStop</string>
     <string name="single_ride">Single Ride</string>
+    <string name="single_price">$2.20</string>
     <string name="day_pass">Day Pass</string>
+    <string name="day_price">$4.40</string>
     <string name="week_pass">Week Pass</string>
+    <string name="week_price">$8.80</string>
     <string name="month_pass">Month Pass</string>
+    <string name="month_price">$13.20</string>
     <string name="back3">back</string>
     <string name="onestop3">OneStop</string>
     <string name="distance_away">Distance Away:</string>

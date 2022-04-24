@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BuyPass extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "ONESTOP_BUYPASS";
+    private String pass;
+    private String price;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +48,6 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
             handleWeekClick();
         } else if (eventSourceId == R.id.MonthPassButton) {
             handleMonthClick();
-        }
-        else if (eventSourceId == R.id.MonthPassButton) {
-            handleMonthClick();
         } else if (eventSourceId == R.id.backed) {
             handleBackClick();
         }
@@ -63,30 +62,37 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
 
     private void handleMonthClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        String month = getString(R.string.month_pass);
-        intent.putExtra("passType", month);
-        intent.putExtra("charge","$13.20");
+        pass = getString(R.string.month_pass);
+        price = getString(R.string.month_price);
+        intent.putExtra("passType",pass);
+        intent.putExtra("charge",price);
         startActivity(intent);
     }
 
     private void handleWeekClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","Week Pass");
-        intent.putExtra("charge","$8.80");
+        pass = getString(R.string.week_pass);
+        price = getString(R.string.week_price);
+        intent.putExtra("passType",pass);
+        intent.putExtra("charge",price);
         startActivity(intent);
     }
 
     private void handleDayClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","Day Pass");
-        intent.putExtra("charge","$4.40");
+        pass = getString(R.string.day_pass);
+        price = getString(R.string.day_price);
+        intent.putExtra("passType",pass);
+        intent.putExtra("charge",price);
         startActivity(intent);
     }
 
     private void handleSingleClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","Single Ride");
-        intent.putExtra("charge","$2.20");
+        pass = getString(R.string.single_ride);
+        price = getString(R.string.single_price);
+        intent.putExtra("passType",pass);
+        intent.putExtra("charge",price);
         startActivity(intent);
     }
 }
