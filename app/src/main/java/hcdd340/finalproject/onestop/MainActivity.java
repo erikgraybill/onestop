@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.material.imageview.ShapeableImageView;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "ONESTOP_MAIN";
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button routes = findViewById(R.id.SeeRoutesButton);
         routes.setOnClickListener(this);
+
+        ShapeableImageView pic = findViewById(R.id.BlueLoop);
+        pic.setOnClickListener(this);
     }
 
     @Override
@@ -34,14 +39,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             handlePassWalletClick();
         } else if (eventSourceId == R.id.SeeRoutesButton) {
             handleRoutesClick();
-        }/* else if (eventSourceId == R.id.psu_logo) {
-            handleLogoClick();
-        } else if (eventSourceId == R.id.id_label) {
-            handleIDLabelClick();
-        }*/
+        }else if (eventSourceId == R.id.BlueLoop) {
+            handlePicClick();
+        }
         else {
             Log.d(TAG, String.format("Unknown click event source: %s", eventSourceId));
         }
+    }
+
+    private void handlePicClick() {
+        Intent intent = new Intent(this, BusStats.class);
+        startActivity(intent);
     }
 
     private void handleRoutesClick() {
