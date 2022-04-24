@@ -63,7 +63,8 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
 
     private void handleMonthClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","Month Pass");
+        String month = getString(R.string.month_pass);
+        intent.putExtra("passType", month);
         intent.putExtra("charge","$13.20");
         startActivity(intent);
     }
