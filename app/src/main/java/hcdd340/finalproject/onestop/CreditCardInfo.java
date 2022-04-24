@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CreditCardInfo extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = "ONESTOP_CREDITCARD";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +24,8 @@ public class CreditCardInfo extends AppCompatActivity implements View.OnClickLis
         TextView total = findViewById(R.id.TOTAL);
         total.setOnClickListener(this);
 
-        //Button routes = findViewById(R.id.SeeRoutesButton);
-        //routes.setOnClickListener(this);
+        Button back = findViewById(R.id.BACKbutton);
+        back.setOnClickListener(this);
 
         Intent intent = getIntent();
         String passType = intent.getStringExtra("passType");
@@ -35,6 +37,15 @@ public class CreditCardInfo extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
+        int eventSourceId = view.getId();
+        Log.d(TAG, String.format("event source id: %s", eventSourceId));
 
+        if (eventSourceId == R.id.BACKbutton) {
+            handleBackClick();
+        }
+    }
+
+    private void handleBackClick() {
+        finish();
     }
 }

@@ -23,8 +23,8 @@ public class BusRoutes extends AppCompatActivity implements View.OnClickListener
         Button whoop = findViewById(R.id.WLButton);
         whoop.setOnClickListener(this);
 
-        //Button routes = findViewById(R.id.SeeRoutesButton);
-        //routes.setOnClickListener(this);
+        Button back = findViewById(R.id.BACK);
+        back.setOnClickListener(this);
     }
 
     @Override
@@ -36,7 +36,13 @@ public class BusRoutes extends AppCompatActivity implements View.OnClickListener
             handleBLClick();
         } else if (eventSourceId == R.id.WLButton) {
             handleWLClick();
+        } else if (eventSourceId == R.id.BACK) {
+            handleBackClick();
         }
+    }
+
+    private void handleBackClick() {
+        finish();
     }
 
     private void handleWLClick() {

@@ -28,6 +28,9 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
 
         Button month = findViewById(R.id.MonthPassButton);
         month.setOnClickListener(this);
+
+        Button back = findViewById(R.id.backed);
+        back.setOnClickListener(this);
     }
 
     @Override
@@ -44,35 +47,44 @@ public class BuyPass extends AppCompatActivity implements View.OnClickListener {
         } else if (eventSourceId == R.id.MonthPassButton) {
             handleMonthClick();
         }
+        else if (eventSourceId == R.id.MonthPassButton) {
+            handleMonthClick();
+        } else if (eventSourceId == R.id.backed) {
+            handleBackClick();
+        }
         else {
             Log.d(TAG, String.format("Unknown click event source: %s", eventSourceId));
         }
     }
 
+    private void handleBackClick() {
+        finish();
+    }
+
     private void handleMonthClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","month");
+        intent.putExtra("passType","Month Pass");
         intent.putExtra("charge","$13.20");
         startActivity(intent);
     }
 
     private void handleWeekClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","week");
+        intent.putExtra("passType","Week Pass");
         intent.putExtra("charge","$8.80");
         startActivity(intent);
     }
 
     private void handleDayClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","day");
+        intent.putExtra("passType","Day Pass");
         intent.putExtra("charge","$4.40");
         startActivity(intent);
     }
 
     private void handleSingleClick() {
         Intent intent = new Intent(this, CreditCardInfo.class);
-        intent.putExtra("passType","single");
+        intent.putExtra("passType","Single Ride");
         intent.putExtra("charge","$2.20");
         startActivity(intent);
     }
