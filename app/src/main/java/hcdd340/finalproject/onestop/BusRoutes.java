@@ -23,6 +23,21 @@ public class BusRoutes extends AppCompatActivity implements View.OnClickListener
         Button whoop = findViewById(R.id.WLButton);
         whoop.setOnClickListener(this);
 
+        Button rink = findViewById(R.id.RLButton);
+        rink.setOnClickListener(this);
+
+        Button vairo = findViewById(R.id.VEButton);
+        vairo.setOnClickListener(this);
+
+        Button waup = findViewById(R.id.WDButton);
+        waup.setOnClickListener(this);
+
+        Button boal = findViewById(R.id.BButton);
+        boal.setOnClickListener(this);
+
+        Button toft = findViewById(R.id.HMButton);
+        toft.setOnClickListener(this);
+
         Button back = findViewById(R.id.BACK);
         back.setOnClickListener(this);
     }

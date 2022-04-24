@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void handlePicClick() {
         Intent intent = new Intent(this, BusStats.class);
+        intent.putExtra("route",getString(R.string.blue_loop));
         startActivity(intent);
     }
 
