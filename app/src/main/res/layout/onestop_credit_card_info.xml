@@ -34,7 +34,7 @@
             android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OneStop"
+            android:text="@string/onestop6"
             android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider1"
@@ -47,79 +47,180 @@
             android:id="@+id/BACKbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BACK"
-            tools:layout_editor_absoluteX="72dp"
-            tools:layout_editor_absoluteY="590dp" />
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/back6"
+            android:textColor="#4527A0"
+            app:layout_constraintEnd_toStartOf="@+id/SUMBITBUTTON"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CREDITNUMBER" />
 
         <Button
             android:id="@+id/SUMBITBUTTON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SUMBIT"
-            tools:layout_editor_absoluteX="240dp"
-            tools:layout_editor_absoluteY="590dp" />
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/sumbit"
+            android:textColor="#4527A0"
+            app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
+            app:layout_constraintStart_toEndOf="@+id/BACKbutton"
+            app:layout_constraintTop_toBottomOf="@+id/cvc" />
 
         <RadioButton
             android:id="@+id/Credit"
-            android:layout_width="90dp"
-            android:layout_height="55dp"
-            android:text="Credit"
-            tools:layout_editor_absoluteX="70dp"
-            tools:layout_editor_absoluteY="246dp" />
+            android:layout_width="84dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/credit"
+            app:layout_constraintBottom_toTopOf="@+id/CardName"
+            app:layout_constraintEnd_toStartOf="@+id/Debit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Prices" />
 
         <RadioButton
             android:id="@+id/Debit"
             android:layout_width="86dp"
             android:layout_height="53dp"
-            android:text="Debit"
-            tools:layout_editor_absoluteX="185dp"
-            tools:layout_editor_absoluteY="246dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/debit"
+            app:layout_constraintBottom_toTopOf="@+id/CardName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Credit"
+            app:layout_constraintTop_toBottomOf="@+id/TOTAL" />
 
         <EditText
-            android:id="@+id/Name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/CardName"
+            android:layout_width="314dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Card Name"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="343dp" />
+            android:text="@string/card_name"
+            app:layout_constraintBottom_toTopOf="@+id/CREDITNUMBER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Debit"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/PassType"
-            android:layout_width="81dp"
-            android:layout_height="28dp"
-            android:text="Single Ride"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="166dp" />
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/single_ride"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/TOTAL"
+            app:layout_constraintTop_toBottomOf="@+id/checkout" />
 
         <TextView
             android:id="@+id/TOTAL"
-            android:layout_width="69dp"
-            android:layout_height="26dp"
-            android:text="$39.00"
-            tools:layout_editor_absoluteX="219dp"
-            tools:layout_editor_absoluteY="166dp" />
+            android:layout_width="82dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/_39_00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Debit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toEndOf="@+id/Prices"
+            app:layout_constraintTop_toBottomOf="@+id/PassType"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="LabelFor"/>
 
         <EditText
             android:id="@+id/CREDITNUMBER"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="88dp"
             android:ems="10"
             android:inputType="numberSigned"
-            android:text="9-NUMBER"
-            tools:layout_editor_absoluteX="41dp"
-            tools:layout_editor_absoluteY="401dp" />
+            android:minHeight="48dp"
+            android:text="@string/_9_number"
+            app:layout_constraintBottom_toTopOf="@+id/BACKbutton"
+            app:layout_constraintEnd_toStartOf="@+id/cvc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints="9-Numbers"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/cvc"
-            android:layout_width="85dp"
-            android:layout_height="53dp"
+            android:layout_width="82dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="numberSigned"
-            android:text="CVC"
-            tools:layout_editor_absoluteX="271dp"
-            tools:layout_editor_absoluteY="393dp" />
+            android:text="@string/cvc"
+            app:layout_constraintBottom_toTopOf="@+id/SUMBITBUTTON"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardName"
+            android:autofillHints="CVC"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/Passtypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/pass_type"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Prices"
+            app:layout_constraintEnd_toStartOf="@+id/PassType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkout" />
+
+        <TextView
+            android:id="@+id/Prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/price"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Passtypes" />
+
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/checkout"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Passtypes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DecorativeDivider1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -24,4 +24,26 @@
     <string name="week_pass">Week Pass</string>
     <string name="month_pass">Month Pass</string>
     <string name="back3">back</string>
+    <string name="onestop3">OneStop</string>
+    <string name="distance_away">Distance Away:</string>
+    <string name="EIGHT_minutes">8 minutes</string>
+    <string name="last_stop">Last Stop:</string>
+    <string name="westgate">Westgate</string>
+    <string name="_15_people">15 People</string>
+    <string name="stop_name">STOP NAME</string>
+    <string name="capacity">Capacity:</string>
+    <string name="Maps">Maps</string>
+    <string name="onestop6">OneStop</string>
+    <string name="cvc">CVC</string>
+    <string name="credit">Credit</string>
+    <string name="ridetype">Single Ride</string>
+    <string name="_9_number">9-NUMBER</string>
+    <string name="pass_type">Pass Type:</string>
+    <string name="card_name">Card Name</string>
+    <string name="debit">Debit</string>
+    <string name="checkout">CHECKOUT:</string>
+    <string name="price">Price:</string>
+    <string name="_39_00">$39.00</string>
+    <string name="sumbit">SUMBIT</string>
+    <string name="back6">BACK</string>
 </resources>
