@@ -74,9 +74,9 @@
             android:layout_width="84dp"
             android:layout_height="48dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginBottom="2dp"
             android:text="@string/credit"
             app:layout_constraintBottom_toTopOf="@+id/CardName"
             app:layout_constraintEnd_toStartOf="@+id/Debit"
@@ -86,11 +86,11 @@
         <RadioButton
             android:id="@+id/Debit"
             android:layout_width="86dp"
-            android:layout_height="53dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginBottom="2dp"
             android:text="@string/debit"
             app:layout_constraintBottom_toTopOf="@+id/CardName"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@
             android:layout_width="151dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="73dp"
             android:layout_marginEnd="24dp"
             android:text="@string/single_ride"
             android:textSize="24sp"
@@ -192,7 +192,8 @@
             app:layout_constraintBottom_toTopOf="@+id/Prices"
             app:layout_constraintEnd_toStartOf="@+id/PassType"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkout" />
+            app:layout_constraintTop_toBottomOf="@+id/checkout"
+            />
 
         <TextView
             android:id="@+id/Prices"
