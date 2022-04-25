@@ -20,6 +20,9 @@ public class BusStats extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.onestop_bus_stats);
 
         TextView route = findViewById(R.id.ROUTENAME);
+        TextView time = findViewById(R.id.Time);
+        TextView lastStop = findViewById(R.id.LastStopData);
+        TextView cap = findViewById(R.id.CapacityData);
         ImageView map = findViewById(R.id.SampleMap);
 
         Intent intent = getIntent();
@@ -28,8 +31,21 @@ public class BusStats extends AppCompatActivity implements View.OnClickListener 
 
         if (routeName.equalsIgnoreCase("White Loop")) {
             map.setImageResource(R.drawable.whoop_map);
+        } else if (routeName.equalsIgnoreCase("Vairo Express")) {
+            map.setImageResource(R.drawable.ve_map);
+            time.setText("23 minutes");
+            lastStop.setText("Pattee");
+            cap.setText("26 People");
+        } else if (routeName.equalsIgnoreCase("Red Link")) {
+            map.setImageResource(R.drawable.rl_map);
+            time.setText("5 minutes");
+            lastStop.setText("Beaver Stadium");
+            cap.setText("12 People");
         } else {
-            map.setImageResource((R.drawable.bloop_map));
+                map.setImageResource((R.drawable.bloop_map));
+                time.setText("11 minutes");
+                lastStop.setText("BJC");
+                cap.setText("15 People");
         }
 
         Button back = findViewById(R.id.Back4);
