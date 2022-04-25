@@ -28,6 +28,8 @@ public class BusStats extends AppCompatActivity implements View.OnClickListener 
 
         if (routeName.equalsIgnoreCase("White Loop")) {
             map.setImageResource(R.drawable.whoop_map);
+        } else {
+            map.setImageResource((R.drawable.bloop_map));
         }
 
         Button back = findViewById(R.id.Back4);
