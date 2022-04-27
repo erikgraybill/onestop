@@ -163,7 +163,6 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:background="@color/white"
-                    android:backgroundTop="@color/purple_200"
                     app:backgroundTint="@color/BACK"
                     android:text="@string/back"
                     android:textColor="@color/black"
