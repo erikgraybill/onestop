@@ -31,6 +31,11 @@ public class BusStats extends AppCompatActivity implements View.OnClickListener 
 
         if (routeName.equalsIgnoreCase("White Loop")) {
             map.setImageResource(R.drawable.whoop_map);
+        } else if (routeName.equalsIgnoreCase("Blue Loop")) {
+            map.setImageResource((R.drawable.bloop_map));
+            time.setText("11 minutes");
+            lastStop.setText("BJC");
+            cap.setText("15 People");
         } else if (routeName.equalsIgnoreCase("Vairo Express")) {
             map.setImageResource(R.drawable.ve_map);
             time.setText("23 minutes");
@@ -41,11 +46,21 @@ public class BusStats extends AppCompatActivity implements View.OnClickListener 
             time.setText("5 minutes");
             lastStop.setText("Beaver Stadium");
             cap.setText("12 People");
-        } else {
-                map.setImageResource((R.drawable.bloop_map));
-                time.setText("11 minutes");
-                lastStop.setText("BJC");
-                cap.setText("15 People");
+        } else if (routeName.equalsIgnoreCase("Waupelani Drive")) {
+            map.setImageResource(R.drawable.wd_map);
+            time.setText("27 minutes");
+            lastStop.setText("Pattee");
+            cap.setText("28 People");
+        } else if (routeName.equalsIgnoreCase("Boalsburg")) {
+            map.setImageResource(R.drawable.b_map);
+            time.setText("9 minutes");
+            lastStop.setText("E. College Ave");
+            cap.setText("6 People");
+        } else if (routeName.equalsIgnoreCase("Toftrees")) {
+            map.setImageResource(R.drawable.hm_map);
+            time.setText("4 minutes");
+            lastStop.setText("Beaver Stadium");
+            cap.setText("10 People");
         }
 
         Button back = findViewById(R.id.Back4);
