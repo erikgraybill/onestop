@@ -35,7 +35,7 @@
             android:id="@+id/NonMapBackground"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:background="@color/grey"
+            android:background="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/DecorativeDivider2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,6 +163,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="40dp"
                     android:background="@color/white"
+                    android:backgroundTop="@color/purple_200"
+                    app:backgroundTint="@color/BACK"
                     android:text="@string/back"
                     android:textColor="@color/black"
                     tools:text="back" />
